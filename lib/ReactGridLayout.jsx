@@ -155,7 +155,7 @@ export default class ReactGridLayout extends React.Component<Props, State> {
       }
     },
     // Choose vertical or hotizontal compaction
-    compactType: PropTypes.oneOf(["vertical", "horizontal"]),
+    compactType: PropTypes.oneOf(["vertical", "horizontal", "horizontalList"]),
 
     // layout is an array of object with the format:
     // {x: Number, y: Number, w: Number, h: Number, i: String}

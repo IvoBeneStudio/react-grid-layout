@@ -99,7 +99,7 @@ export default class ShowcaseLayout extends React.Component {
           // I like to have it animate on mount. If you don't, delete `useCSSTransforms` (it's default `true`)
           // and set `measureBeforeMount={true}`.
           useCSSTransforms={this.state.mounted}
-          compactType={this.state.compactType}
+          compactType={"horizontalList"}
           preventCollision={!this.state.compactType}
         >
           {this.generateDOM()}
@@ -115,10 +115,10 @@ function generateLayout() {
     return {
       x: (_.random(0, 5) * 2) % 12,
       y: Math.floor(i / 6) * y,
-      w: 2,
-      h: y,
+      w: 1,
+      h: 1,
       i: i.toString(),
-      static: Math.random() < 0.05
+      static: false
     };
   });
 }
